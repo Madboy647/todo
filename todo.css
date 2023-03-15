@@ -1,0 +1,324 @@
+@font-face {
+    font-family: lemon;
+    src: url(lemon.otf);
+}
+*{
+    margin: 0;
+    padding: 0; 
+}
+.todo{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#59875E,black);
+    background-repeat: no-repeat;
+}
+.todo img{
+width: 100%;
+height: 98vh;
+}
+.container{
+    position: relative;
+    top: -700px;
+    right: -120px;
+    width: 75vw;
+    height: 70vh;
+    padding:50px;
+    border-radius: 20px;
+    border:2px solid white;
+    background: rgba(147, 147, 147, 0.103);
+  backdrop-filter: blur(6px);
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
+    border-top-color: rgba(175, 175, 175, 0.5);
+    border-left-color: rgba(149, 147, 147, 0.5);
+    border-right-color: rgba(193, 193, 193, 0.1);
+    border-bottom-color: rgba(205, 205, 205, 0.1);  
+}
+.container h1{
+   position: relative;
+   top: -10px;
+   right: -90px;
+    font-family: lemon;
+    font-size: 1.5rem;
+    color: white;
+}
+.container img{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    width: 70px;
+    height: 70px;
+}
+.container input{
+    position: relative;
+    top: -30px;
+    left: 300px;
+    width: 20vw;
+    height:fit-content;
+    padding:15px;
+    color: white;
+    font-size: 1rem;
+    font-family: lemon;
+    border-radius: 20px;
+    border:2px solid white;
+    background: rgba(135, 135, 135, 0.103);
+  backdrop-filter: blur(4px);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    border-top-color: rgba(199, 196, 196, 0.5);
+    border-left-color: rgba(173, 173, 173, 0.5);
+    border-right-color: rgba(193, 193, 193, 0.1);
+    border-bottom-color: rgba(205, 205, 205, 0.1); 
+}
+.container input:hover{
+   border-top-color: rgb(4, 255, 79);
+    border-left-color: rgb(0, 255, 42);
+    border-right-color: rgb(100, 239, 54);
+    border-bottom-color: rgb(7, 255, 143); 
+    border-top-left-radius: rgb(33, 255, 162);
+}
+.todo-lists{
+    position: relative;
+    top: -10px;
+    width: 10vw;
+    height: 50vh;
+    padding:50px;
+    border-radius: 20px;
+    border:2px solid white;
+    background: rgba(135, 135, 135, 0.103);
+  backdrop-filter: blur(4px);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    border-top-color: rgba(199, 196, 196, 0.5);
+    border-left-color: rgba(173, 173, 173, 0.5);
+    border-right-color: rgba(193, 193, 193, 0.1);
+    border-bottom-color: rgba(205, 205, 205, 0.1);  
+}
+.todo-lists img{
+    position: relative;
+    top: -30px;
+    left: 100px;
+    width: 7vw;
+    height: 15vh;
+    rotate: 25deg;
+}
+.todo-lists h1{
+    position: relative;
+    top: -120px;
+    right: 30px;
+    font-size: 1.2rem;
+}
+
+.todo-lists ul li{
+    position: relative;
+    right: 20px;
+    width: max-content;
+    list-style-type: none;
+    color: wheat;
+    line-height: 2;
+    letter-spacing: 2px;
+    font: 1rem lemon;
+    
+}
+.todo-lists ul li a{
+    text-decoration: none;
+    color:white;
+
+}
+.todo-lists ul li a:hover{
+   background: linear-gradient(rgb(7, 255, 143),rgb(0, 255, 42));
+   text-transform: uppercase;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color:transparent;
+   
+
+}
+.tasks-box{
+    position: relative;
+    top: -487px;
+    right: -280px;
+    width: 30vw;
+    height: 50vh;
+    padding:50px;
+    border-radius: 20px;
+    border:2px solid white;
+    background: rgba(135, 135, 135, 0.103);
+  backdrop-filter: blur(4px);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    border-top-color: rgba(199, 196, 196, 0.5);
+    border-left-color: rgba(173, 173, 173, 0.5);
+    border-right-color: rgba(193, 193, 193, 0.1);
+    border-bottom-color: rgba(205, 205, 205, 0.1); 
+}
+.tasks-box img{
+    position: relative;
+    top: 70px;
+    left: -40px;
+    width:10vw ;
+    height: 34vh;
+}
+.comment{
+    width: 20vw;
+    height: 0.1vh;
+    padding:50px;
+    border-radius: 20px;
+    border:2px solid white;
+    background: rgba(0, 0, 0, 0.359);
+  backdrop-filter: blur(6px);
+    box-shadow: 1rem 1rem 1rem #00000080;
+    border-top-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgba(232, 232, 232, 0.504);
+    border-bottom-color: rgba(210, 210, 210, 0.316);
+
+}
+.comment:hover{
+    border-top-color: rgb(4, 255, 79);
+         border-left-color: rgb(0, 255, 42);
+         border-right-color: rgb(100, 239, 54);
+         border-bottom-color: rgb(7, 255, 143); 
+         border-top-left-radius: rgb(33, 255, 162);
+}
+.comment h2{
+    position: relative;
+    top: -125px;
+    font: 1.2rem lemon;
+    color: white;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+.comment p{
+    position: relative;
+    top: -122px;
+    color: rgba(255, 255, 255, 0.623);
+    font: 0.7rem lemon;
+    letter-spacing: 2px;
+}
+.comment img{
+    position: relative;
+    top: -80px;
+    left: 300px;
+    width: 6vw;
+    height: 12vh;
+    rotate: 25deg;
+}
+.calend{
+    position: relative;
+    top: -960px;
+    right: -870px;
+    width: 10vw;
+    height: 49vh;
+    padding:50px;
+    border-radius: 20px;
+    border:2px solid white;
+    background: rgba(135, 135, 135, 0.103);
+  backdrop-filter: blur(6px);
+    box-shadow: 1rem 1rem 1rem #00000080;
+    border-top-color: rgba(255, 255, 255, 0.341);
+    border-left-color: rgba(180, 179, 179, 0.63);
+    border-right-color: rgba(51, 51, 51, 0.504);
+    border-bottom-color: rgba(126, 126, 126, 0.501);
+
+}
+.calend img{
+    position: relative;
+    top: -140px;
+    left: -20px;
+    width: 12vw;
+    height: 29vh;
+}
+.mend{
+    position: relative;
+    top: -100px;
+    right: 28px;
+    width: 7vw;
+    height: 0.2vh;
+    padding:50px;
+    border-radius: 20px;
+    border:2px solid white;
+    background: rgba(0, 0, 0, 0.359);
+  backdrop-filter: blur(6px);
+    box-shadow: 1rem 1rem 1rem #00000080;
+    border-top-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgba(232, 232, 232, 0.504);
+    border-bottom-color: rgba(210, 210, 210, 0.316);
+}
+.mend:hover{
+        border-top-color: rgb(4, 255, 79);
+         border-left-color: rgb(0, 255, 42);
+         border-right-color: rgb(100, 239, 54);
+         border-bottom-color: rgb(7, 255, 143); 
+         border-top-left-radius: rgb(33, 255, 162);
+}
+.calendar{
+    position: relative;
+    top: -120px;
+    right: 28px;
+    width: 7vw;
+    height: 7vh;
+    padding:50px;
+    border-radius: 20px;
+    border:2px solid white;
+    background: rgba(0, 0, 0, 0.359);
+  backdrop-filter: blur(6px);
+    box-shadow: 1rem 1rem 1rem #00000080;
+    border-top-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgba(232, 232, 232, 0.504);
+    border-bottom-color: rgba(210, 210, 210, 0.316);
+}
+.calendar:hover{
+    border-top-color: rgb(4, 255, 79);
+         border-left-color: rgb(0, 255, 42);
+         border-right-color: rgb(100, 239, 54);
+         border-bottom-color: rgb(7, 255, 143); 
+         border-top-left-radius: rgb(33, 255, 162);
+}
+.ratios{
+    position: relative;
+    top: -220px;
+    right: -140px;
+    width: 3vw;
+    height: 0.2vh;
+    padding:50px;
+    border-radius: 20px;
+    border:2px solid white;
+    background: rgba(0, 0, 0, 0.359);
+  backdrop-filter: blur(6px);
+    box-shadow: 1rem 1rem 1rem #00000080;
+    border-top-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgba(232, 232, 232, 0.504);
+    border-bottom-color: rgba(210, 210, 210, 0.316);
+}
+.ratios:hover{
+    border-top-color: rgb(4, 255, 79);
+         border-left-color: rgb(0, 255, 42);
+         border-right-color: rgb(100, 239, 54);
+         border-bottom-color: rgb(7, 255, 143); 
+         border-top-left-radius: rgb(33, 255, 162);
+
+}
+
+.ratio1{
+    position: relative;
+    top: -325px;
+    left: 320px;
+    width: 3vw;
+    height: 0.2vh;
+    padding:50px;
+    border-radius: 20px;
+    border:2px solid white;
+    background: rgba(0, 0, 0, 0.359);
+  backdrop-filter: blur(6px);
+    box-shadow: 1rem 1rem 1rem #00000080;
+    border-top-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgba(232, 232, 232, 0.504);
+    border-bottom-color: rgba(210, 210, 210, 0.316);
+}
+.ratio1:hover{
+    border-top-color: rgb(4, 255, 79);
+         border-left-color: rgb(0, 255, 42);
+         border-right-color: rgb(100, 239, 54);
+         border-bottom-color: rgb(7, 255, 143); 
+         border-top-left-radius: rgb(33, 255, 162);
+}
